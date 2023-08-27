@@ -1,0 +1,22 @@
+﻿<Window x:Class="PeopleJsonViewer.MainWindow"
+        FontFamily="Verdana"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PeopleJsonViewer"
+        mc:Ignorable="d"
+        Title="PeopleJsonViewer" Height="700" Width="600">
+    <Grid>
+        <Button Content="&lt;" FontSize="30" HorizontalAlignment="Left" Width="78" Click="Button_Click_1" Height="78" VerticalAlignment="Bottom"/>
+        <Button Content=">" FontSize="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="78" Width="78" Click="Button_Click"/>
+        <Button Content="Select File" FontSize="20" Click="OpenFileDialog_Click" Margin="326,10,16,622" />
+        <TextBlock Text="{Binding FName}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,36,46,0" Height="50" FontSize="25"/>
+        <TextBlock Text="{Binding Gender}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,86,46,0" Height="50" FontSize="25"/>
+        <TextBlock Text="{Binding Dob}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,141,46,0" Height="50" FontSize="25"/>
+        <TextBlock Text="{Binding Job}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,196,46,0" Height="50" FontSize="25"/>
+        <TextBlock Text="{Binding PhoneNumber}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,251,46,0" Height="50" FontSize="25"/>
+        <TextBlock Text="{Binding Email}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,301,46,0" Height="50" FontSize="25"/>
+        <TextBlock Text="{Binding FullAddress}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,351,46,0" Height="250" FontSize="25"/>
+    </Grid>
+</Window>
